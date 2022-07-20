@@ -296,17 +296,55 @@
             <div class="pt-8 px-4 mx-auto max-w-screen-xl lg:px-6">
               <div class="mx-auto max-w-screen-xl lg:py-8">
                 <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-                    <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Projets</h2>
+                    <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Réalisations</h2>
                 </div>
             </div>
           </section>
 
           <section id="portail">
             <div class="gap-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-8 lg:px-6">
-                <img class="w-full rounded-lg" src="images/portail.png" alt="dashboard image">
+                
+                <div id="default-carousel" class="relative" data-carousel="slide">
+                  <!-- Carousel wrapper -->
+                  <div class="overflow-hidden relative h-96 rounded-lg md:h-80">
+                      <!-- Item 1 -->
+                      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
+                          <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                          <img src="images/realisation/portail.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="dashboard image">
+                      </div>
+                      <!-- Item 2 -->
+                      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+                          <img src="images/realisation/billeterie.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                      </div>
+                      <!-- Item 3 -->
+                      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                          <img src="images/realisation/frappe.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                      </div>
+                  </div>
+                  <!-- Slider indicators -->
+                  <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                      <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                      <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                      <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                  </div>
+                  <!-- Slider controls -->
+                  <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
+                      <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                          <span class="sr-only">Previous</span>
+                      </span>
+                  </button>
+                  <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
+                      <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                          <span class="sr-only">Next</span>
+                      </span>
+                  </button>
+                </div>
+
                 <div class="mt-4 md:mt-0">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Portail des étudiants</h2>
-                    <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">net7 développe depuis plus de 10 ans le portail des étudiants pour les écoles de Toulouse-INP.</p>
+                    <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">net7 développe depuis plus de 10 ans le portail des étudiants pour les écoles de Toulouse-INP. En améliorant d'année en année ses services comme la billeterie, les mailing et bien d'autres.</p>
                     <a href="https://bde.enseeiht.fr" class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
                         Visiter
                         <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -322,8 +360,8 @@
                     <p class="mb-4">C le boucat</p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-8">
-                  <img class="w-full rounded-lg" src="images/boochat-chat.png" alt="boochat chat">
-                  <img class="mt-4 w-full lg:mt-10 rounded-lg" src="images/boochat-game.png" alt="boochat game">
+                  <img class="w-full rounded-lg" src="images/realisation/boochat-chat.png" alt="boochat chat">
+                  <img class="mt-4 w-full lg:mt-10 rounded-lg" src="images/realisation/boochat-game.png" alt="boochat game">
                 </div>
             </div>
         </section>
