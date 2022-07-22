@@ -115,7 +115,7 @@
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex items-center p-2 text-sm text-gray-800 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-cta"
               aria-expanded="false"
             >
@@ -300,24 +300,27 @@
 
     <main class="flex-auto bg-white dark:bg-gray-900">
       <section id="services">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6 lg:py-16">
-          <div
-            class="max-w-screen-md mb-8 animate__animated animate__fadeInDown"
-          >
+        <div
+          class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6"
+        >
+          <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
             <h2
               class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
             >
               Nos services
             </h2>
-            <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+            <p class="font-light text-gray-800 sm:text-xl dark:text-gray-400">
               net7 met à disposition des étudiants de Toulouse-INP de nombreux
               services
             </p>
           </div>
+
           <div
             class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
           >
-            <div class="animate__animated animate__fadeInRight">
+            <div
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center flex flex-col justify-between items-center"
+            >
               <div
                 class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
               >
@@ -334,14 +337,30 @@
               </div>
               <h3 class="mb-2 text-xl font-bold dark:text-white">LaFrappe</h3>
               <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam quibusdam architecto doloribus et quaerat asperiores
-                a, veritatis, ratione totam saepe nemo culpa voluptates
-                repudiandae soluta! Reiciendis temporibus magni impedit ab.
+                TM, TD, Projets Corrigés
               </p>
+              <a
+                href="https://www.bde.enseeiht.fr/services/frappe/"
+                target="_blank"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                La frappe
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div
-              class="animate__animated animate__fadeInRight"
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center flex flex-col justify-between items-center"
               style="
                 visibility: visible;
                 -webkit-animation-delay: 0.3s;
@@ -365,14 +384,30 @@
               </div>
               <h3 class="mb-2 text-xl font-bold dark:text-white">Ecobox</h3>
               <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-                quidem quis commodi ullam! Voluptatum optio expedita blanditiis
-                excepturi, sint numquam voluptates iusto cupiditate cumque
-                pariatur commodi quasi omnis iste eligendi.
+                En partenariat avec le bdd, acheter votre ecobox
               </p>
+              <a
+                href="https://www.bde.enseeiht.fr/services/ecobox/"
+                target="_blank"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                ecobox
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div
-              class="animate__animated animate__fadeInRight"
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center flex flex-col justify-between items-center"
               style="
                 visibility: visible;
                 -webkit-animation-delay: 0.6s;
@@ -400,14 +435,30 @@
               </div>
               <h3 class="mb-2 text-xl font-bold dark:text-white">Loca7</h3>
               <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Repellat ipsa ullam autem sapiente, officia fugit vero vitae
-                corporis repellendus exercitationem quae explicabo sint earum
-                laudantium natus placeat nulla quia eaque.
+                A la recheche d'un logement ?
               </p>
+              <a
+                href="https://www.bde.enseeiht.fr/services/logement/"
+                target="_blank"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                Loca7
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div
-              class="animate__animated animate__fadeInRight"
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center"
               style="
                 visibility: visible;
                 -webkit-animation-delay: 0.9s;
@@ -433,14 +484,30 @@
                 Covoiturage
               </h3>
               <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim
-                quae corrupti, fugit culpa dolorem? Tempore a quam vero rerum
-                provident alias harum cupiditate. Distinctio blanditiis vitae id
-                doloribus officiis!
+                Bah c'est du covoiturage
               </p>
+              <a
+                href="https://www.bde.enseeiht.fr/services/covoiturage/"
+                target="_blank"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                Covoiturage
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div
-              class="animate__animated animate__fadeInRight"
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center"
               style="
                 visibility: visible;
                 -webkit-animation-delay: 1.2s;
@@ -467,15 +534,32 @@
                 </svg>
               </div>
               <h3 class="mb-2 text-xl font-bold dark:text-white">Billeterie</h3>
-              <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Tempore rerum placeat saepe nam! Ducimus aliquid praesentium
-                magni voluptatibus deleniti numquam sunt explicabo blanditiis.
-                Fugit eum illum corrupti commodi sequi voluptates!
+              <p class="text-gray-500 dark:text-gray-400 text-center">
+                C'est ici que tu réserve ta place pour les meilleurs évènement
+                de l'année.
               </p>
+              <a
+                href="https://billetterie.inpt.fr/event/"
+                target="_blank"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                Billeterie
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div
-              class="animate__animated animate__fadeInRight"
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center"
               style="
                 visibility: visible;
                 -webkit-animation-delay: 1.5s;
@@ -504,15 +588,31 @@
               <h3 class="mb-2 text-xl font-bold dark:text-white">
                 Hébergement
               </h3>
-              <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                nam illum expedita ab! Unde mollitia excepturi esse labore
-                incidunt voluptate voluptas rem aperiam nisi voluptatibus dolor
-                quibusdam temporibus, et aliquid.
+              <p class="text-gray-500 dark:text-gray-400 text-center">
+                Tu n'as pas envie d'utiliser wix pour ton eportfolio mais tu ne
+                peux pas l'héberger toi même ?
               </p>
+              <a
+                href="hebergement.html"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                Hébergement
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div
-              class="animate__animated animate__fadeInRight"
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center"
               style="
                 visibility: visible;
                 -webkit-animation-delay: 1.8s;
@@ -540,14 +640,30 @@
               </div>
               <h3 class="mb-2 text-xl font-bold dark:text-white">Gitlab</h3>
               <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                nam illum expedita ab! Unde mollitia excepturi esse labore
-                incidunt voluptate voluptas rem aperiam nisi voluptatibus dolor
-                quibusdam temporibus, et aliquid.
+                C'est comme github mais pour l'INP.
               </p>
+              <a
+                href="https://git.inpt.fr/"
+                target="_blank"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                Gitlab
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div
-              class="animate__animated animate__fadeInRight"
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center"
               style="
                 visibility: visible;
                 -webkit-animation-delay: 2.1s;
@@ -575,14 +691,30 @@
               </div>
               <h3 class="mb-2 text-xl font-bold dark:text-white">Mailman</h3>
               <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                nam illum expedita ab! Unde mollitia excepturi esse labore
-                incidunt voluptate voluptas rem aperiam nisi voluptatibus dolor
-                quibusdam temporibus, et aliquid.
+                Gestionnaire de mailing
               </p>
+              <a
+                href="https://mailman.bde.enseeiht.fr/"
+                target="_blank"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                Mailman
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
             <div
-              class="animate__animated animate__fadeInRight"
+              class="animate__animated animate__fadeInRight flex flex-col justify-between items-center"
               style="
                 visibility: visible;
                 -webkit-animation-delay: 2.4s;
@@ -606,12 +738,26 @@
                 </svg>
               </div>
               <h3 class="mb-2 text-xl font-bold dark:text-white">Wiki.js</h3>
-              <p class="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                nam illum expedita ab! Unde mollitia excepturi esse labore
-                incidunt voluptate voluptas rem aperiam nisi voluptatibus dolor
-                quibusdam temporibus, et aliquid.
-              </p>
+              <p class="text-gray-500 dark:text-gray-400">Le wiki des clubs</p>
+              <a
+                href="https://wiki.inpt.fr/"
+                target="_blank"
+                class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-2"
+              >
+                Wiki.js
+                <svg
+                  class="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -621,7 +767,7 @@
     <footer
       class="p-4 bg-white-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
     >
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+      <span class="text-sm text-gray-800 sm:text-center dark:text-gray-400"
         >net7, le club informatique de l’n7
       </span>
       <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
