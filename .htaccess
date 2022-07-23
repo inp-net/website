@@ -1,0 +1,14 @@
+# Custom 404 errors
+
+ErrorDocument 404 https://www.bde.enseeiht.fr/clubs/net7/404.html
+
+# Prevent viewing of .htaccess file
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# Prevent directory listings
+
+Options All -Indexes
