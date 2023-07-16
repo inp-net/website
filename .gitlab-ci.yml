@@ -6,6 +6,13 @@ pages:
   script:
     - mkdir public
     - cp -r *.html public/
+    - cp -r js public/
+    - cp -r css public/
+    - cp -r images public/
+    - cp -r videos public/
+    - cp favicon.ico public/
+    - cp .htaccess public/
+    - cp robots.txt public/
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
