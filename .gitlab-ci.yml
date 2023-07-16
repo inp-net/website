@@ -9,7 +9,7 @@ pages:
     - cp -r js public/
     - cp -r css public/
     - cp -r images public/
-    - cp -r videos public/
+    - cp -r video public/
     - cp favicon.ico public/
     - cp .htaccess public/
     - cp robots.txt public/
