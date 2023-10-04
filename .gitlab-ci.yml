@@ -5,12 +5,12 @@ before_script: []
 pages:
   script:
     - mkdir public
-    - cp -r */*.html public/
-    - cp -r *.html public/
-    - cp -r js public/
-    - cp -r css public/
-    - cp -r images public/
-    - cp -r video public/
+    - cp -rv */*.html public/
+    - cp -rv *.html public/
+    - cp -rv js public/
+    - cp -rv css public/
+    - cp -rv images public/
+    - cp -rv video public/
     - cp favicon.ico public/
     - cp .htaccess public/
     - cp robots.txt public/
