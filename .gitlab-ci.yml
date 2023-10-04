@@ -5,6 +5,7 @@ before_script: []
 pages:
   script:
     - mkdir public
+    - cp -r */*.html public/
     - cp -r *.html public/
     - cp -r js public/
     - cp -r css public/
