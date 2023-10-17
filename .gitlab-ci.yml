@@ -7,6 +7,7 @@ pages:
     - mkdir public
     - cp -rv */*.html public/
     - cp -rv *.html public/
+    - cp -rv *.pdf public/
     - cp -rv js public/
     - cp -rv css public/
     - cp -rv images public/
