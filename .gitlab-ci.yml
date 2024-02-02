@@ -17,6 +17,7 @@ pages:
     - cp robots.txt public/
     - cp *.pdf public/
     - cp _redirects public/
+    - cp bureau.yaml public/
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
