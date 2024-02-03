@@ -14,7 +14,8 @@ pages:
       - ortfodb
   script:
     - mkdir public
-    - PATH="$PATH:./"./build.sh
+    - chmod +x build.sh
+    - ./build.sh
     - cp -rv media/ public/
     - cp -rv */*.html public/
     - cp -rv *.html public/
