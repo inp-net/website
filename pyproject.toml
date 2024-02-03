@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "net7-website"
+version = "0.1.0"
+description = ""
+authors = ["net7 <contact@net7.dev>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Jinja2 = "^3.1.3"
+requests = "^2.31.0"
+munch = "^4.0.0"
+bs4 = "^0.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

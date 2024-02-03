@@ -13,7 +13,7 @@ make thumbnails:
   - 600
   - 1200
   input file: ""
-  file name template: <media directory>/<work id>/<block id>@<size>.webp
+  file name template: thumbnails/<work id>/<block id>@<size>.webp
 build metadata file: .lastbuild.yaml
 media:
   at: media/
