@@ -4,7 +4,7 @@ image: python:latest
 pages:
   before_script:
     - apt-get update
-    - apt-get install -y imagemagick ffmpeg
+    - apt-get install -y imagemagick ffmpeg libc6
     - pip install poetry
     - poetry config virtualenvs.in-project true
     - poetry install
