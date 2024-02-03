@@ -32,9 +32,9 @@ projects = [
     if id != "#meta"
 ]
 
-print("Projects:")
+pad_length = len("       Finished")
 for p in projects:
-    print(f"- {p.content.default.title}")
+    print(f"{'Included':>{pad_length}} {p.content.default.title}")
 
 environment = Environment()
 environment.filters["media_blocks"] = media_blocks
