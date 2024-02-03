@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-poetry run python projects/clone.py https://git.inpt.fr/api/graphql net7 $@
+poetry run python projects/clone.py https://git.inpt.fr/api/graphql "sur net7.dev" $@
 if [[ ! -f ortfodb ]]; then
     curl -fsSL https://github.com/ortfo/db/releases/download/v0.1.0/ortfodb -o ortfodb
 fi
