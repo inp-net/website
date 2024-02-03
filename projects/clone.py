@@ -1,6 +1,9 @@
 #!/usr/bin/env python
-import requests
 import subprocess
+
+import requests
+
+
 def gql(endpoint: str, query: str, variables: dict) -> dict:
     response = requests.post(
         endpoint,
@@ -64,7 +67,7 @@ if __name__ == "__main__":
 
     repositories = gql_unroll_paginated(endpoint, query, {
         "topics": topics,
-        "descriptionPaths": ["README.md"],
+        "descriptionPaths": [".ortfo/description.md"],
     }, get_next_cursor=lambda response: response["data"]["projects"]["pageInfo"]["endCursor"])
 
     for repo in repositories:
@@ -80,4 +83,3 @@ if __name__ == "__main__":
             else:
                 print(f"{path}: Cloning...")
                 clone_repo(repo["httpUrlToRepo"], full_path)
-
