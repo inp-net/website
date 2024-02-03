@@ -14,6 +14,8 @@ def media_blocks(blocks):
 def thumbnail(media, resolution):
     return "media/" + media.thumbnails.__dict__[str(resolution)]
 
+def length_more_than(items, length):
+    return len(items) >= length
 
 def repository_url(metadata):
     url = metadata.additionalMetadata.git
@@ -25,12 +27,23 @@ def repository_url(metadata):
         return f"https://git.inpt.fr/{url}"
     return f"https://git.inpt.fr/net7/{url}"
 
+def has_vertical_images(blocks):
+    return any(b.dimensions.aspectRatio <= 1 for b in media_blocks(blocks))
 
 projects = [
     DefaultMunch.fromDict(p)
     for (id, p) in json.loads(Path("database.json").read_text()).items()
     if id != "#meta"
 ]
+
+important_projects = ["churros", "loca7"] # todo utiliser .metadata.additionalMetadata.important
+
+def projects_sorter(p):
+    if p.id in important_projects:
+        return important_projects.index(p.id)
+    return len(important_projects) + 1
+
+projects.sort(key=projects_sorter)
 
 pad_length = len("       Finished")
 for p in projects:
@@ -44,6 +57,8 @@ environment.filters["first_paragraph_text"] = lambda blocks: BeautifulSoup(
 )("p")[0].text
 environment.filters["thumbnail"] = thumbnail
 environment.filters["repository_url"] = repository_url
+environment.filters["length_more_than"] = length_more_than
+environment.filters["has_vertical_images"] = has_vertical_images
 
 
 template_code = environment.compile(Path("realisation.html.j2").read_text())
