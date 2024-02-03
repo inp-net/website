@@ -14,6 +14,9 @@ pages:
     paths:
       - .venv
       - ortfodb
+      - projects
+      - media
+      - .lastbuild.yaml
   script:
     - mkdir public
     - chmod +x build.sh
