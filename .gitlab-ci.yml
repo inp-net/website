@@ -3,8 +3,10 @@ image: python:latest
 # Functions that should be executed before the build script is run
 pages:
   before_script:
+    - echo deb http://ftp.debian.org/debian experimental main contrib non-free > /etc/apt/sources.list
     - apt-get update
-    - apt-get install -y imagemagick ffmpeg libc6
+    - apt-get install -y imagemagick ffmpeg 
+    - apt-get -t experimental install -y glibc
     - pip install poetry
     - poetry config virtualenvs.in-project true
     - poetry install
