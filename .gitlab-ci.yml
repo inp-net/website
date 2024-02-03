@@ -6,7 +6,7 @@ pages:
     - pip install poetry
     - poetry config virtualenvs.in-project true
     - poetry install
-    - curl -fsSL https://github.com/ortfo/db/releases/download/v0.1.0/ortfodb
+    - curl -fsSL https://github.com/ortfo/db/releases/download/v0.1.0/ortfodb -o ortfodb
   cache:
     paths:
       - .venv
