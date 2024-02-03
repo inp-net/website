@@ -6,7 +6,7 @@ pages:
     - echo deb http://ftp.debian.org/debian experimental main contrib non-free > /etc/apt/sources.list
     - apt-get update
     - apt-get install -y imagemagick ffmpeg 
-    - apt-get -t experimental install -y glibc
+    - apt-get -t experimental install -y libc6
     - pip install poetry
     - poetry config virtualenvs.in-project true
     - poetry install
