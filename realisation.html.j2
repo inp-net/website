@@ -200,10 +200,10 @@
       </div>
     </section>
 
-    {% for project in projects %}
+    {% for i, project in projects | enumerate %}
     <section id="{{ project.id }}">
       <div
-        class="flex flex-auto flex-col md:flex-row gap-8 items-center gp-8 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
+        class="flex flex-auto flex-col md:flex-{% if i % 2 == 0 %}row-reverse{%else%}row{%endif%} gap-8 items-center gp-8 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
         <div id="default-carousel" data-carousel="slide" class="relative w-full md:order-first order-last">
           <!-- Carousel wrapper -->
           <div class="overflow-hidden relative h-96 rounded-lg md:h-80 drop-shadow-xl dark:filter-none">
