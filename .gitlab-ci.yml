@@ -28,7 +28,6 @@ pages:
     - cp -rv js public/
     - cp -rv css public/
     - cp -rv images public/
-    - cp -rv video public/
     - cp favicon.ico public/
     - cp .htaccess public/
     - cp robots.txt public/
