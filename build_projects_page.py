@@ -23,9 +23,29 @@ def repository_url(metadata):
         return None
     if re.match(r"^https?://.*", url):
         return url
+    if url.startswith("github:"):
+        return url.replace("github:", "https://github.com/")
+    if url.startswith("github.com/"):
+        return f"https://{url}"
     if "/" in url:
         return f"https://git.inpt.fr/{url}"
     return f"https://git.inpt.fr/net7/{url}"
+
+def repository_contributors_url(metadata):
+    url = metadata.additionalMetadata.git
+    if not url:
+        return None
+    if url.startswith("https://github.com"):
+        return f"{url}/graphs/contributors"
+    if url.startswith("github:"):
+        return url.replace("github:", "https://github.com/") + "/graphs/contributors"
+    if url.startswith("github.com/"):
+        return f"https://{url}/graps/contributors"
+    if re.match(r"^https?://.*", url):
+        return None
+    if "/" in url:
+        return f"https://git.inpt.fr/{url}/-/graphs/main"
+    return f"https://git.inpt.fr/net7/{url}/-/graphs/main"
 
 def has_vertical_images(blocks):
     return any(b.dimensions.aspectRatio <= 1 for b in media_blocks(blocks))
