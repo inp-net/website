@@ -77,6 +77,7 @@ environment.filters["first_paragraph_text"] = lambda blocks: BeautifulSoup(
 )("p")[0].text
 environment.filters["thumbnail"] = thumbnail
 environment.filters["repository_url"] = repository_url
+environment.filters["repository_contributors_url"] = repository_contributors_url
 environment.filters["length_more_than"] = length_more_than
 environment.filters["has_vertical_images"] = has_vertical_images
 
