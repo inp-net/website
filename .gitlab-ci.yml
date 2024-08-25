@@ -1,4 +1,4 @@
-image: python:3.10
+image: python:latest
 
 # Functions that should be executed before the build script is run
 pages:
