@@ -8,7 +8,7 @@ pages:
     - apt-get install -y imagemagick ffmpeg libc6
     - pip install poetry
     - poetry config virtualenvs.in-project true
-    - poetry install
+    - poetry install --no-root
   cache:
     paths:
       - .venv
