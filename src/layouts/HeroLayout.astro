@@ -1,0 +1,11 @@
+---
+import Layout from './BaseLayout.astro';
+import Hero from '../components/Hero.svelte';
+---
+
+<Layout>
+    <Hero client:only="svelte" />
+    <div class="container">
+        <slot />
+    </div>
+</Layout>

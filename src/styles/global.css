@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #f4f3f2;
+    --secondary-color: #208466;
+    --tertiary-color: #12514b;
+    --background-color: #0a0d12;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* scrollbar-width: none; */
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+code {
+    font-family: "JetBrains Mono", monospace;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
