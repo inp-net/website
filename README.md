@@ -6,7 +6,7 @@ Fait avec [Astro](https://astro.build) et beaucoup d'amour !
 
 ## Design
 
-[LIEN FIGMA]
+Sur [Figma](https://www.figma.com/design/HLV1wHGPpJKZPDdIvyESiD/net7)
 
 ## Dev
 
