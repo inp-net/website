@@ -1,9 +1,7 @@
 <svg width="1277" height="158" viewBox="0 0 1277 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1277" height="321" fill="url(#gradient)"/>
-<defs>
-<linearGradient id="gradient" x1="639" y1="6.60443e-06" x2="639" y2="160" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0A0D12" stop-opacity="0"/>
-<stop offset="0.75" stop-color="#0A0D12"/>
+<linearGradient id="gradient" x1="639" y1="0" x2="639" y2="160" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#0a0d12" stop-opacity="0"/>
+    <stop offset="90%" stop-color="#0a0d12" stop-opacity="1"/>
 </linearGradient>
-</defs>
+<rect width="1277" height="321" fill="url(#gradient)"/>
 </svg>

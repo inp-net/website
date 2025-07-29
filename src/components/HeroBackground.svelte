@@ -46,28 +46,10 @@
     {/each}
 </div>
 
-<div class="hero">
-    <code>L'ASSOCIATION D'INFORMATIQUE DE L'ENSEEIHT</code>
-</div>
-
 <style>
-    .hero {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-
-    code {
-        position: absolute;
-        text-align: center;
-        font-size: 16;
-        bottom: 10rem;
-    }
-
     .words {
         position: absolute;
-        height: 100%;
+        min-height: 100vh;
         width: 100%;
         overflow: hidden;
         top: 0;

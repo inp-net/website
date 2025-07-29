@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Navbar from "../components/Navbar.svelte";
 ---
 
 <!doctype html>
@@ -12,7 +13,7 @@ import "../styles/global.css";
 		<title>net7</title>
 	</head>
     <header>
-
+        <Navbar client:only="svelte"/>
     </header>
 	<body>
            <slot />

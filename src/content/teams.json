@@ -1,0 +1,97 @@
+[
+    {
+        "year": "2025",
+        "members": [
+            {
+                "name": "Matteo Planchet",
+                "title": "Président",
+                "avatar": "/avatars/matteo.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/matteo-planchet/",
+                    "github": "https://github.com/PainOchoco",
+                    "discord": "@painochoco"
+                }
+            },
+            {
+                "name": "Mazen Messai",
+                "title": "Vice-Président",
+                "avatar": "/avatars/mazen.jpeg",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/mazen-messai-4587a41bb",
+                    "github": "https://github.com/Mazen-Messai",
+                    "discord": "@maaaazen"
+                }
+            },
+            {
+                "name": "Nolan Carlisi",
+                "title": "Trésorier",
+                "avatar": "/avatars/nolan.jpeg",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/nolan-carlisi/",
+                    "github": "https://github.com/ARKANYOTA",
+                    "website": "https://arkanyota.github.io/",
+                    "discord": "@arkanyota"
+                }
+            },
+            {
+                "name": "Iman-Norr Draou",
+                "title": "Secrétaire",
+                "avatar": "/avatars/iman.jpeg",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/iman-draou-aa8aaa256/",
+                    "discord": "@iman1789"
+                }
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "members": [
+            {
+                "name": "Evann Dreumont",
+                "title": "Président"
+            },
+            {
+                "name": "Benjamin Soyer",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Cyrian Ragot",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Nell Truong",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Alice Dissoubray",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "members": [
+            {
+                "name": "Gwenn Le Bihan",
+                "title": "Présidente"
+            },
+            {
+                "name": "Téo Pisenti",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Hugo Simon",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Nathan Auchère",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Floriane Payen",
+                "title": "Secrétaire"
+            }
+        ]
+    }
+]
