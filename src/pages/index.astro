@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/HomeLayout.astro";
+import Net7 from "../assets/net7.svg";
+---
+
+<Layout>
+    <p>
+        <Net7 /> c'est l'association d'informatique de l'école. Concrètement, on
+        développe et on maintient les
+        <a href="/services">services des étudiants</a>, des espaces de stockages
+        pour les étudiants et clubs, et d'autres encore.
+    </p>
+
+    <br />
+
+    <p>
+        Mais c'est pas tout ! On organise des
+        <a href="/formations">formations</a> sur plein de sujets; certaines sont
+        grand public mais la plupart sont plutôt techniques. Et bien évidemment,
+        comme on est aussi des pirates aguerris (si si, promis), on participe à des
+        challenges de programmation et de cybersécurité. Et aussi parfois on joue
+        aux jeux vidéo.
+    </p>
+
+    <br />
+
+    <div class="faq">
+        <div>
+            <h3>Où se trouve <Net7 /> ?</h3>
+            <p>
+                Le meilleur moyen de nous rencontrer est de venir dans notre
+                local, en D207 dans la "Tour Radio" (prendre l'escalier après le
+                STI, et monter au deuxième étage, le local est au fond du
+                couloir à droite).
+            </p>
+        </div>
+
+        <div>
+            <h3>Comment rejoindre l'asso ?</h3>
+            <p>
+                Pour cela, il vous suffit de venir à notre rencontre et
+                participer à la vie de l'association.
+            </p>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .faq {
+        display: flex;
+        gap: 4rem;
+        margin: 2rem 0;
+    }
+
+    .faq > div {
+        flex: 1;
+    }
+</style>

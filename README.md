@@ -1,6 +1,6 @@
 # Site Web net7.dev
 
-![Aperçu du site](./public/preview.png)
+![Aperçu du site](./static/preview.png)
 
 Fait avec [Astro](https://astro.build) et beaucoup d'amour !
 
@@ -10,7 +10,7 @@ Sur [Figma](https://www.figma.com/design/HLV1wHGPpJKZPDdIvyESiD/net7)
 
 ## Dev
 
-Le contenu texte du site est facile à modifier, il est écrit sur les pages markdown situées dans `/src/pages/`.
+Le contenu texte du site est facile à modifier, il est écrit sur les pages Astro situées dans `/src/pages/`.
 
 Pour commencer, cloner ce repo sur votre ordi, ensuite installez les dépendances et lancez le serveur de dev avec les commandes :
 

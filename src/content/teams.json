@@ -5,7 +5,7 @@
             {
                 "name": "Matteo Planchet",
                 "title": "Président",
-                "avatar": "/avatars/matteo.webp",
+                "avatar": "matteo.webp",
                 "links": {
                     "linkedin": "https://www.linkedin.com/in/matteo-planchet/",
                     "github": "https://github.com/PainOchoco",
@@ -15,7 +15,7 @@
             {
                 "name": "Mazen Messai",
                 "title": "Vice-Président",
-                "avatar": "/avatars/mazen.jpeg",
+                "avatar": "mazen.jpeg",
                 "links": {
                     "linkedin": "https://www.linkedin.com/in/mazen-messai-4587a41bb",
                     "github": "https://github.com/Mazen-Messai",
@@ -25,7 +25,7 @@
             {
                 "name": "Nolan Carlisi",
                 "title": "Trésorier",
-                "avatar": "/avatars/nolan.jpeg",
+                "avatar": "nolan.jpeg",
                 "links": {
                     "linkedin": "https://www.linkedin.com/in/nolan-carlisi/",
                     "github": "https://github.com/ARKANYOTA",
@@ -36,7 +36,7 @@
             {
                 "name": "Iman-Norr Draou",
                 "title": "Secrétaire",
-                "avatar": "/avatars/iman.jpeg",
+                "avatar": "iman.jpeg",
                 "links": {
                     "linkedin": "https://www.linkedin.com/in/iman-draou-aa8aaa256/",
                     "discord": "@iman1789"
@@ -71,6 +71,7 @@
     },
     {
         "year": "2023",
+        "photo": "/images/bureaux/net7-2023.jpg",
         "members": [
             {
                 "name": "Gwenn Le Bihan",
@@ -90,6 +91,259 @@
             },
             {
                 "name": "Floriane Payen",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "photo": "/images/bureaux/net7-2022.jpg",
+        "members": [
+            {
+                "name": "Theodor Vallier",
+                "title": "Président"
+            },
+            {
+                "name": "Nathan Maillet",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Nohé Hinniger-Foray",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Gabriel Rochaix-Yamamoto",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Damien Dassieu",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2021",
+        "members": [
+            {
+                "name": "Pierre-Antoine Japy",
+                "title": "Président"
+            },
+            {
+                "name": "Mathis Grisel",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Laurent Fainsin",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Clement Broutin",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2020",
+        "photo": "/images/bureaux/net7-2020.jpg",
+        "members": [
+            {
+                "name": "Gautier Ben Aïm",
+                "title": "Président"
+            },
+            {
+                "name": "Tom Pillot",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Romain Malmain",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Tanguy Duvignac",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2019",
+        "members": [
+            {
+                "name": "Corentin Lauverjat",
+                "title": "Président"
+            },
+            {
+                "name": "Sherwin Sabras",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Jean-Francois Giraud",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Simon Thoby",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2018",
+        "members": [
+            {
+                "name": "François Conzelmann",
+                "title": "Président"
+            },
+            {
+                "name": "Augustin Matter",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Lucas Salvato",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Raphael Le Blé",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2017",
+        "members": [
+            {
+                "name": "Thomas Bailleux",
+                "title": "Président"
+            },
+            {
+                "name": "Valentin Deniaud",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Stanislas Deneuville",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Valentin Rigal",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2016",
+        "photo": "/images/bureaux/net7-2016.jpg",
+        "members": [
+            {
+                "name": "Flo Piboubès",
+                "title": "Président·e"
+            },
+            {
+                "name": "Léna David",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Nicolas Surbayrole",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Sacha Liguori",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2015",
+        "photo": "/images/bureaux/net7-2015.jpg",
+        "members": [
+            {
+                "name": "Benoît Lemarchand",
+                "title": "Président"
+            },
+            {
+                "name": "Patate",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Matthieu Daumas",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Adam Shimi",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2014",
+        "members": [
+            {
+                "name": "Axel Tripier",
+                "title": "Président"
+            },
+            {
+                "name": "Bernard Desmyter",
+                "title": "Trésorier"
+            }
+        ]
+    },
+    {
+        "year": "2013",
+        "members": [
+            {
+                "name": "Maxime Arthaud",
+                "title": "Président"
+            },
+            {
+                "name": "Mickaël Carl",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Korantin Auguste",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Maxence Ahlouche",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2012",
+        "members": [
+            {
+                "name": "Franklin Delehelle",
+                "title": "Président"
+            },
+            {
+                "name": "Élie Bouttier",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Ken Hasselmann",
+                "title": "Trésorier"
+            },
+            {
+                "name": "François Magimel",
+                "title": "Secrétaire"
+            }
+        ]
+    },
+    {
+        "year": "2011",
+        "photo": "/images/bureaux/net7-2011.jpg",
+        "members": [
+            {
+                "name": "Guilhem Saurel",
+                "title": "Président"
+            },
+            {
+                "name": "Martin d’Allens",
+                "title": "Vice-Président"
+            },
+            {
+                "name": "Octave Berry",
+                "title": "Trésorier"
+            },
+            {
+                "name": "Vincent Angladon",
                 "title": "Secrétaire"
             }
         ]

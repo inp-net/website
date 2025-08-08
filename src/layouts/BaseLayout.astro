@@ -5,20 +5,18 @@ import Navbar from "../components/Navbar.svelte";
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>net7</title>
-	</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/net7.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>net7</title>
+    </head>
     <header>
-        <Navbar client:only="svelte"/>
+        <Navbar client:only="svelte" />
     </header>
-	<body>
-           <slot />
-	</body>
-    <footer>
-        
-    </footer>
+    <body>
+        <slot />
+    </body>
+
 </html>

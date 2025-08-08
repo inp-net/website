@@ -1,0 +1,103 @@
+---
+import Layout from "../layouts/PageLayout.astro";
+import teams from "../content/teams.json";
+import Member from "../components/Member.astro";
+---
+
+<Layout>
+    <h1>L'équipe</h1>
+
+    <p>
+        Chaque année, un nouveau bureau est élu pour gérer l'association. Voici
+        le bureau actuel :
+    </p>
+
+    <div class="buro">
+        {teams[0].members.map((member) => <Member {...member} />)}
+    </div>
+
+    <div class="center">
+        <img src="/images/ag_passation_2025.jpg" alt="Passation 2025" />
+        <p>
+            <em>
+                Tous les adhérents présents à l'Assemblée générale de passation
+                2025
+            </em>
+        </p>
+    </div>
+
+    <hr />
+
+    <section class="burox">
+        <h2>Historique des bureaux</h2>
+        {
+            teams.toSpliced(0, 1).map((team) => (
+                <div>
+                    <div>
+                        <h3>
+                            {Number.parseInt(team.year)}/
+                            {Number.parseInt(team.year) + 1}
+                        </h3>
+                        <ul>
+                            {team.members.map((member) => (
+                                <li>
+                                    {member.title} : {member.name}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    {team.photo && (
+                        <img src={team.photo} alt={`Bureau ${team.year}`} />
+                    )}
+                </div>
+            ))
+        }
+    </section>
+</Layout>
+
+<style>
+    .buro {
+        margin: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .buro {
+            flex-direction: column;
+        }
+
+        .burox > div {
+            flex-direction: column !important;
+            text-align: center !important;
+        }
+    }
+
+    .burox img {
+        height: 10rem;
+        width: auto;
+    }
+
+    .burox > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        border-radius: 8px;
+    }
+
+    .burox > div:nth-of-type(even) {
+        text-align: right;
+        background-color: color-mix(
+            in srgb,
+            transparent,
+            var(--tertiary-color) 20%
+        );
+        flex-direction: row-reverse;
+    }
+</style>

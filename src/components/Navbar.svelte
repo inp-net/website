@@ -14,10 +14,19 @@
         isOpen = !isOpen;
     }
 
-    // optional: keyboard shortcuts
+    // One key shortcut per link
     document.addEventListener("keydown", (event) => {
+        // Don't catch shortcuts with Ctrl, Alt, Meta, Shift, and repeat (holding down a key)
+        if (
+            event.ctrlKey ||
+            event.altKey ||
+            event.metaKey ||
+            event.shiftKey ||
+            event.repeat
+        )
+            return;
         for (const link of links) {
-            if (event.key === link.label.at(0)?.toLowerCase()) {
+            if (event.key.toLowerCase() === link.label.at(0)?.toLowerCase()) {
                 window.location.href = link.href;
             }
         }
@@ -56,8 +65,13 @@
         justify-content: center;
         gap: 1rem;
         border-radius: 12px;
-        border: 1px solid color-mix(in srgb, var(--primary-color) 11%, transparent);
-        background-color: color-mix(in srgb, var(--primary-color) 10%, transparent);
+        border: 1px solid
+            color-mix(in srgb, var(--primary-color) 11%, transparent);
+        background-color: color-mix(
+            in srgb,
+            var(--primary-color) 10%,
+            transparent
+        );
         backdrop-filter: blur(4px);
         margin: 1rem auto;
         padding: 0.75rem 1.5rem;
@@ -105,7 +119,7 @@
         transform: translateY(-7px) rotate(-45deg);
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         .burger {
             display: flex;
         }
@@ -121,5 +135,9 @@
             max-height: 500px;
             display: flex;
         }
+    }
+
+    a {
+        text-decoration: none;
     }
 </style>

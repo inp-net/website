@@ -1,0 +1,142 @@
+---
+import Layout from "../layouts/PageLayout.astro";
+import Badge from "../components/Badge.astro";
+import Globe from "../assets/icons/Globe.svg";
+---
+
+<Layout>
+    <h1>Clubs affiliés</h1>
+
+    <section>
+        <h2>INP-NET</h2>
+        <p>
+            INP-NET est le club d'Informatique de l'INP Toulouse. Il fournit de
+            nombreux <a href="/services">services</a> gratuitement à tous les étudiants
+            de l'INP.
+        </p>
+    </section>
+    <section>
+        <h2>7uring</h2>
+        <p>
+            7uring est le sous-club d'algorithmie de net7. Des équipes ont
+            participé au <a href="http://www.swerc.eu/">SWERC</a> et à d'autres compétitions
+            comme Google Code Jam ou BattleDev. Que vous soyez débutant ou confirmé,
+            rejoignez-nous pour progresser en programmation et résoudre des problèmes
+            ensemble !
+        </p>
+    </section>
+    <section>
+        <h2>Pony7</h2>
+        <p>
+            Pony7 est l'équipe CTF (Capture The Flag) de net7, elle participe à
+            des CTFs régulièrement, environ 1 par mois. Il y a de tous les
+            niveaux, débutant comme confirmé, et c'est un bon moyen de découvrir
+            la cybersécurité et de s'améliorer.
+        </p>
+    </section>
+
+    <h1>Partenaires</h1>
+
+    <section>
+        <h2>Bleemeo</h2>
+
+        <img src="/images/logos/bleemeo.png" width="125" alt="logo Bleemeo >" />
+
+        <p>
+            Bleemeo est une solution de supervision et de monitoring pour les
+            infrastructures informatiques. Ils nous soutiennent en fournissant
+            des outils de monitoring pour nos serveurs et nos services.
+        </p>
+
+        <Badge>
+            <Globe />
+            <a href="https://www.bleemeo.com" target="_blank">bleemeo.com</a>
+        </Badge>
+    </section>
+
+    <section>
+        <h2>Grifon</h2>
+
+        <img src="/images/logos/grifon.svg" width="150" alt="logo Grifon >" />
+
+        <p>
+            Grifon est un fournisseur d'accès à Internet associatif, basé à
+            Rennes. Nous avons un échange de machine virtuelle avec eux... TODO
+        </p>
+
+        <Badge>
+            <Globe />
+            <a href="https://grifon.fr" target="_blank">grifon.fr</a>
+        </Badge>
+    </section>
+
+    <section>
+        <h2>Federez</h2>
+
+        <img src="/images/logos/federez.png" width="150" alt="logo Federez >" />
+
+        <p>
+            Federez est une fédération d'associations étudiantes, qui vise à
+            coordonner et promouvoir les échanges entre les associations
+            d'informatique et de réseau et les Fournisseurs d'Accès à Internet
+            associatifs étudiants français. net7 est membre de Federez, des
+            projets sont à venir !
+        </p>
+
+        <Badge>
+            <Globe />
+            <a href="https://federez.fr" target="_blank">federez.fr</a>
+        </Badge>
+    </section>
+
+    <h1>Projets soutenus</h1>
+
+    <section>
+        <h2>THCON</h2>
+
+        <img src="/images/logos/thcon.png" width="200" alt="logo THCON >" />
+
+        <p>
+            La Toulouse Hacking Convention (ou THCon) est une conférence de
+            cybersécurité qui rassemble les passionnés, professionnels et
+            chercheurs ! Depuis sa création en 2017, la THCon se tient chaque
+            année à Toulouse, en France. Aujourd'hui, c'est un événement
+            incontournable de la cybersécurité en Occitanie et au-delà.
+        </p>
+
+        <Badge>
+            <Globe />
+            <a href="https://thcon.fr" target="_blank">thcon.fr</a>
+        </Badge>
+    </section>
+
+    <section>
+        <h2>Capitole du Libre</h2>
+
+        <img
+            src="/images/logos/capitole_du_libre.png"
+            width="200"
+            alt="logo Capitole du Libre >"
+        />
+
+        <p>
+            Week-end dédié au logiciel libre à travers plus de 100 conférences,
+            et plus de 20 ateliers pour les expert⋅e⋅s et le grand public.
+            L'évènement a accueilli 1200 participant⋅e⋅s en 2024. L'évènement
+            est ouvert à tous sur inscription en ligne gratuite préalable!
+        </p>
+
+        <Badge>
+            <Globe />
+            <a href="https://capitoledulibre.org/" target="_blank">
+                capitoledulibre.org
+            </a>
+        </Badge>
+    </section>
+</Layout>
+
+<style>
+    section {
+        margin: 2rem 0;
+    }
+</style>

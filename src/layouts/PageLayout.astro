@@ -1,9 +1,21 @@
 ---
-import Layout from './BaseLayout.astro';
+import Layout from "./BaseLayout.astro";
+import Blob from "../assets/blob1.svg";
 ---
 
 <Layout>
+    <Blob class="blob" />
     <div class="container">
         <slot />
     </div>
 </Layout>
+
+<style>
+    .blob {
+        position: absolute;
+        top: -3rem;
+        z-index: -1;
+        pointer-events: none;
+        width: 100%;
+    }
+</style>

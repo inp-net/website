@@ -1,0 +1,54 @@
+---
+import links from "../content/links.json";
+
+import Element from "../assets/icons/element.svg";
+import Discord from "../assets/icons/discord.svg";
+import GitLab from "../assets/icons/gitlab.svg";
+import Instagram from "../assets/icons/instagram.svg";
+import LinkedIn from "../assets/icons/linkedin.svg";
+
+const linkIcons = [
+    {
+        href: links.matrix,
+        icon: Element,
+    },
+    {
+        href: links.instagram,
+        icon: Instagram,
+    },
+    {
+        href: links.gitlab,
+        icon: GitLab,
+    },
+    {
+        href: links.discord,
+        icon: Discord,
+    },
+    {
+        href: links.linkedin,
+        icon: LinkedIn,
+    },
+];
+---
+
+<div class="links">
+    {
+        linkIcons.map((link) => (
+            <a href={link.href}>
+                {" "}
+                <link.icon />{" "}
+            </a>
+        ))
+    }
+</div>
+
+<style>
+    .links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .links a {
+        width: 1.5rem;
+    }
+</style>

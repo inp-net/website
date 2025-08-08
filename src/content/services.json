@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Churros",
+        "description": "Vie étudiante de l'n7 en une appli",
+        "url": "https://churros.inpt.fr",
+        "image": "/images/logos/churros.png"
+    },
+    {
+        "name": "NextCloud",
+        "description": "Drive collaboratif, plein de stockage !",
+        "url": "https://cloud.inpt.fr",
+        "image": "/images/logos/nextcloud.png"
+    },
+    {
+        "name": "GitLab",
+        "description": "Comme GitHub mais pour l'INPT",
+        "url": "https://gitlab.inpt.fr",
+        "image": "/images/logos/gitlab.png"
+    },
+    {
+        "name": "Loca7",
+        "description": "A la recherche d'un logement ?",
+        "url": "https://loca7.inpt.fr",
+        "image": "/images/logos/loca7.png"
+    },
+    {
+        "name": "HedgeDoc",
+        "description": "Prise de notes collaborative",
+        "url": "https://hedgedoc.inpt.fr",
+        "image": "/images/logos/hedgedoc.png"
+    },
+    {
+        "name": "Cinny / Matrix",
+        "description": "Messagerie chiffrée et décentralisée",
+        "url": "https://chat.inpt.fr",
+        "image": "/images/logos/cinny.png"
+    },
+    {
+        "name": "Authentik",
+        "description": "Authentification unique pour les services de l'INPT",
+        "url": "https://auth.inpt.fr",
+        "image": "/images/logos/authentik.png"
+    },
+    {
+        "name": "Hébergement divers",
+        "description": "Hébergement de sites web, applications et autres services",
+        "image": "/images/logos/proxmox.webp"
+    }
+]
