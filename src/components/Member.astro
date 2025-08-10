@@ -75,6 +75,10 @@ avatar = avatar ? `/images/avatars/${avatar}` : "";
 </div>
 
 <style>
+    h3 {
+        margin: 0;
+    }
+
     .member {
         display: flex;
         align-items: center;
@@ -101,13 +105,14 @@ avatar = avatar ? `/images/avatars/${avatar}` : "";
         display: flex;
         justify-content: center;
         gap: 0.5rem;
+        margin: 0.5rem 0;
     }
 
     .links a {
         width: 1.5rem;
         height: 1.5rem;
         fill: currentColor;
-        transition: scale 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     .links a:hover {

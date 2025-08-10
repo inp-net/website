@@ -1,14 +1,11 @@
 <script lang="ts">
     import words from "../content/words.json";
 
-    let width = $state(window.innerWidth);
-    let height = $state(window.innerHeight);
+    let realWidth = $state(0);
+    let realHeight = $state(0);
 
-    function update() {
-        width = window.innerWidth;
-        height = window.innerHeight;
-    }
-    window.addEventListener("resize", update);
+    let width = $derived(realWidth);
+    let height = $derived(realHeight * 0.75);
 
     let randomWords: string[] = $state([]);
     let fontHeight = $state(16);
@@ -16,10 +13,11 @@
 
     $effect(() => {
         const jetbrainsMonoRatio = 0.48;
-        fontHeight = (width / height) * 10;
+        fontHeight = (width / height) * 8;
         const fontWidth = fontHeight * jetbrainsMonoRatio;
 
-        const wordLengthMean = words.reduce((sum, word) => sum + word.length, 0) / words.length;
+        const wordLengthMean =
+            words.reduce((sum, word) => sum + word.length, 0) / words.length;
         gap = fontWidth * 0.5;
         const wordWidthMean = wordLengthMean * fontWidth + gap;
 
@@ -38,7 +36,13 @@
     });
 </script>
 
-<div class="words" style:--heightPx={fontHeight + "px"} style:--gapPx={gap + "px"}>
+<svelte:window bind:innerWidth={realWidth} bind:innerHeight={realHeight} />
+
+<div
+    class="words"
+    style:--heightPx={fontHeight + "px"}
+    style:--gapPx={gap + "px"}
+>
     {#each Array(randomWords.length) as _, i}
         <span class="word">
             {randomWords[i % randomWords.length]}
@@ -49,7 +53,7 @@
 <style>
     .words {
         position: absolute;
-        min-height: 100vh;
+        min-height: 75vh;
         width: 100%;
         overflow: hidden;
         top: 0;
@@ -60,7 +64,7 @@
         font-size: var(--heightPx);
         background:
             center bottom / 100vw url("../assets/fade.svg"),
-            center / min(95vw, 60rem) url("../assets/net7_bloom.svg"),
+            center 50% / min(95vw, 60rem) url("../assets/net7_bloom.svg"),
             left top / 75vw 75vh url("../assets/blob1.svg"),
             right bottom / 75vw 75vh url("../assets/blob2.svg");
         background-repeat: no-repeat;
