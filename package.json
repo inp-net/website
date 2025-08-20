@@ -1,0 +1,24 @@
+{
+    "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac",
+    "name": "net7-dev",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/mdx": "^4.3.1",
+        "@astrojs/svelte": "^7.1.0",
+        "@lucide/astro": "^0.539.0",
+        "astro": "^5.12.0",
+        "svelte": "^5.36.10",
+        "typescript": "^5.8.3"
+    },
+    "devDependencies": {
+        "prettier": "^3.6.2",
+        "prettier-plugin-astro": "^0.14.1"
+    }
+}

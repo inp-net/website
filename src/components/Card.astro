@@ -1,0 +1,20 @@
+<div class="card">
+    <slot />
+</div>
+
+<style>
+    .card {
+        border: 1px solid
+            color-mix(in srgb, var(--secondary-color) 50%, transparent);
+        background-color: color-mix(
+            in srgb,
+            var(--tertiary-color) 30%,
+            transparent
+        );
+        border-radius: 8px;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+</style>

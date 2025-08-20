@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/PageLayout.astro";
+import links from "../content/links.json";
+import Socials from "../components/Socials.astro";
+---
+
+<Layout>
+    <h1>Contact</h1>
+    <p>
+        Vous pouvez nous contacter par mail à <b>contact [arobase] net7.dev</b>
+    </p>
+
+    <h2>Local</h2>
+    <p>
+        Le plus simple est de venir nous voir directement à notre local, en D207
+        dans la Tour Radio !
+    </p>
+
+    <h2>Réseaux</h2>
+    <p>
+        Suivez-nous sur nos réseaux sociaux pour échanger et être au courant de
+        nos formations et évènements !
+    </p>
+
+    <div class="socials">
+        <Socials />
+    </div>
+</Layout>
+
+<style>
+    .socials {
+        display: flex;
+        justify-content: center;
+    }
+</style>

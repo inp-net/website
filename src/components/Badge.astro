@@ -1,0 +1,22 @@
+<div class="badge">
+    <slot />
+</div>
+
+<style>
+    .badge {
+        margin: 0.5rem 0;
+        display: inline-flex;
+        padding: 0.25rem 0.5rem 0.25rem 0.3rem;
+        background-color: var(--tertiary-color);
+        text-decoration: none;
+        border-radius: 1rem;
+        transition: background-color 0.3s ease;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .badge:hover {
+        background-color: var(--secondary-color);
+    }
+</style>

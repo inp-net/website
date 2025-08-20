@@ -1,0 +1,122 @@
+---
+import Website from "../assets/icons/globe.svg";
+import LinkedIn from "../assets/icons/linkedin.svg";
+import Discord from "../assets/icons/discord.svg";
+import Github from "../assets/icons/github.svg";
+
+interface Props {
+    name: string;
+    title: string;
+    avatar?: string;
+    links?: {
+        linkedin?: string;
+        github?: string;
+        discord?: string;
+        website?: string;
+    };
+}
+
+let { name, title, avatar, links } = Astro.props;
+avatar = avatar ? `/images/avatars/${avatar}` : "";
+---
+
+<div class="member">
+    <img src={avatar} alt={`Avatar de ${name}`} class="avatar" />
+    <div class="info">
+        <h3>{name}</h3>
+        <p>{title}</p>
+        <div class="links">
+            {
+                links?.linkedin && (
+                    <a
+                        href={links.linkedin}
+                        target="_blank"
+                        aria-label={`LinkedIn de ${name}`}
+                    >
+                        <LinkedIn />
+                    </a>
+                )
+            }
+            {
+                links?.github && (
+                    <a
+                        href={links.github}
+                        target="_blank"
+                        aria-label={`GitHub de ${name}`}
+                    >
+                        <Github />
+                    </a>
+                )
+            }
+            {
+                links?.discord && (
+                    <a
+                        href={links.discord}
+                        target="_blank"
+                        aria-label={`Discord de ${name}`}
+                    >
+                        <Discord />
+                    </a>
+                )
+            }
+            {
+                links?.website && (
+                    <a
+                        href={links.website}
+                        target="_blank"
+                        aria-label={`Site de ${name}`}
+                    >
+                        <Website />
+                    </a>
+                )
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    h3 {
+        margin: 0;
+    }
+
+    .member {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        width: 10rem;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .links a {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: currentColor;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .links a:hover {
+        scale: 1.5;
+        color: var(--secondary-color);
+    }
+</style>

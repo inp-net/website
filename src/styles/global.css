@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #f4f3f2;
+    --secondary-color: #208466;
+    --tertiary-color: #12514b;
+    --background-color: #0a0d12;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../assets/fonts/JetBrainsMono-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    z-index: 10;
+    top: 1rem;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+code {
+    font-family: "JetBrains Mono", monospace;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0.75rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 0.25rem 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: color-mix(in srgb, transparent, var(--primary-color) 75%);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: all;
+}
+
+u {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: all;
+}
+
+ul {
+    list-style-position: inside;
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+img[alt$=">"] {
+    float: right;
+}
+
+img[alt$="<"] {
+    float: left;
+}
+
+img[alt$="|"] {
+    display: block;
+    max-width: 100%;
+    margin: 1em auto;
+    float: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    img[alt$=">"],
+    img[alt$="<"] {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}

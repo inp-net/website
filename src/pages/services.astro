@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/PageLayout.astro";
+import services from "../content/services.json";
+import Card from "../components/Card.astro";
+---
+
+<Layout>
+    <h1>Services</h1>
+
+    <p>
+        Découvrez les services que nous proposons aux étudiants de l'INP
+        Toulouse.
+    </p>
+    <p>Certains sont développés par nos soins !</p>
+
+    <section>
+        <div class="services">
+            {
+                services.map((service) => (
+                    <Card>
+                        {service.image && (
+                            <img src={service.image} alt={service.name} />
+                        )}
+                        <div>
+                            <a href={service.url} target="_blank">
+                                <h4>{service.name}</h4>
+                            </a>
+                            <p>{service.description}</p>
+                        </div>
+                    </Card>
+                ))
+            }
+
+            <p>... et bien d'autres !</p>
+
+            <p>
+                Si vous avez une idée de service à proposer, n'hésitez pas à
+                <a href="/contact">nous contacter</a> !
+            </p>
+        </div>
+
+        <div class="rack">
+            <img src="/images/rack.jpeg" width="300px" alt="" />
+            <span>
+                <em>
+                    Le rack qui fait tourner nos services : 5 hyperviseurs
+                    Proxmox, 3 nodes Ceph, 3 UPS...
+                </em>
+            </span>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    section {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        section {
+            flex-direction: column;
+        }
+    }
+
+    .rack {
+        flex: 1;
+        text-align: center;
+    }
+
+    .services {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+        gap: 1rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+
+    .services img {
+        max-width: 50px;
+        height: auto;
+        border-radius: 8px;
+    }
+</style>

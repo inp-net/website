@@ -1,0 +1,40 @@
+---
+import Layout from "./BaseLayout.astro";
+import HeroBackground from "../components/HeroBackground.svelte";
+import Socials from "../components/Socials.astro";
+import { ChevronDown } from "@lucide/astro";
+---
+
+<Layout>
+    <HeroBackground client:only="svelte" />
+    <div class="hero">
+        <div class="content">
+            <code>L'ASSOCIATION D'INFORMATIQUE DE L'ENSEEIHT</code>
+            <Socials />
+        </div>
+    </div>
+</Layout>
+<div class="container">
+    <slot />
+</div>
+
+<style>
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75vh;
+    }
+
+    .content {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16;
+        bottom: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+</style>
