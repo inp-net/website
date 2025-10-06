@@ -34,7 +34,7 @@ import Member from "../components/Member.astro";
             teams.toSpliced(0, 1).map((team) => (
                 <div>
                     <div>
-                        <h3>
+                        <h3 id={team.year}>
                             {Number.parseInt(team.year)}/
                             {Number.parseInt(team.year) + 1}
                         </h3>
