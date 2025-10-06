@@ -43,6 +43,8 @@ html,
 body {
     min-height: 100%;
     width: 100%;
+    /* Fix scrolling to a anchor is obscured by navbar */
+    scroll-padding-top: 100px;
 }
 
 header {
