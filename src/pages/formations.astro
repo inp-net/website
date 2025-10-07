@@ -1,11 +1,27 @@
 ---
 import Layout from "../layouts/PageLayout.astro";
+import formations from "../content/formations.json";
 ---
 
 <Layout>
     <h1>Formations</h1>
-    <p>
-        Ça arrive, restez branchés ! Vous retrouverez ici les supports des
-        formations passées
-    </p>
+    <p>Vous retrouverez ici les supports des formations passées</p>
+
+    <ul>
+        {
+            formations.map((formation) => (
+                <li>
+                    <a href={formation.url} target="_blank">
+                        {formation.name} - {formation.date}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
 </Layout>
+
+<style>
+    ul {
+        list-style: disc inside;
+    }
+</style>
