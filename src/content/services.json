@@ -14,13 +14,13 @@
     {
         "name": "GitLab",
         "description": "Comme GitHub mais pour l'INPT",
-        "url": "https://gitlab.inpt.fr",
+        "url": "https://git.inpt.fr",
         "image": "/images/logos/gitlab.png"
     },
     {
         "name": "Loca7",
         "description": "A la recherche d'un logement ?",
-        "url": "https://loca7.inpt.fr",
+        "url": "https://loca7.fr",
         "image": "/images/logos/loca7.png"
     },
     {
