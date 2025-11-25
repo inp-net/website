@@ -13,5 +13,15 @@
         "name": "Formation Web #2: CSS Avancé",
         "url": "https://cloud.inpt.fr/s/PFZtAonCxzEYxHj",
         "date": "16/10/2025"
+    },
+    {
+        "name": "Formation Web #3: JavaScript & TypeScript",
+        "url": "https://cloud.inpt.fr/s/9Ex5LiJ3SxM3f5g",
+        "date": "06/11/2025"
+    },
+    {
+        "name": "Formation Web #4: Svelte",
+        "url": "https://cloud.inpt.fr/s/GYmyFkBpD6F4aEp",
+        "date": "13/11/2025"
     }
 ]
