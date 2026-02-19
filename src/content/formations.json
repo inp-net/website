@@ -25,6 +25,11 @@
         "date": "13/11/2025"
     },
     {
+        "name": "Atelier 7uring #1 : Intro & tri topologique",
+        "url": "https://git.inpt.fr/net7/formas-7uring/-/raw/main/forma1-13-11-2025/forma1.pdf",
+        "date": "13/11/2025"
+    },
+    {
         "name": "Formation Web #5: Backend & SvelteKit",
         "url": "https://cloud.inpt.fr/s/YpmcFWsSNmTfpMP",
         "date": "27/11/2025"
@@ -35,8 +40,23 @@
         "date": "29/01/2026"
     },
     {
+        "name": "Atelier 7uring #2 : Programmation dynamique",
+        "url": "https://git.inpt.fr/net7/formas-7uring/-/raw/main/forma2-29-01-2026/forma2.pdf",
+        "date": "29/01/2026"
+    },
+    {
         "name": "Formation Docker",
         "url": "https://cloud.inpt.fr/s/5y9mFS3R2M4PASW",
         "date": "12/02/2026"
+    },
+    {
+        "name": "Atelier 7uring #3 : Graphes & Programmation dynamique",
+        "url": "https://git.inpt.fr/net7/formas-7uring/-/raw/main/forma3-19-02-2026/forma3.pdf",
+        "date": "19/02/2026"
+    },
+    {
+        "name": "Présentation HomeLab",
+        "url": "https://cloud.inpt.fr/s/QonnRfTsRfbeAMo",
+        "date": "19/02/2026"
     }
 ]
