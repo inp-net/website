@@ -12,16 +12,27 @@ import Member from "../components/Member.astro";
         le bureau actuel :
     </p>
 
-    <div class="buro">
-        {teams[0].members.map((member) => <Member {...member} />)}
+    <div class="stack">
+        <h2>Le bureau</h2>
+        <div class="buro">
+            {teams[0].members
+                .filter((member: any) => member.board)
+                .map((member: any) => <Member {...member} />)}
+        </div>
+        <h2>Le bureau étendu</h2>
+        <div class="buro">
+            {teams[0].members
+                .filter((member: any) => !member.board)
+                .map((member: any) => <Member {...member} />)}
+        </div>
     </div>
 
     <div class="center">
-        <img src="/images/ag_passation_2025.jpg" alt="Passation 2025" />
+        <img src="/images/ag_passation_2026.webp" alt="Passation 2025" />
         <span>
             <em>
                 Tous les adhérents présents à l'Assemblée générale de passation
-                2025
+                2026
             </em>
         </span>
     </div>
@@ -57,11 +68,17 @@ import Member from "../components/Member.astro";
 
 <style>
     .buro {
-        margin: 2rem;
         display: flex;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        gap: 2rem;
+    }
+
+    .stack {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+        gap: 5rem;
     }
 
     @media screen and (max-width: 768px) {

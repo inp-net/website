@@ -62,9 +62,12 @@
         flex-wrap: wrap;
         justify-content: space-around;
         font-size: var(--heightPx);
+        will-change: transform;
+        transform: translateZ(0);
         background:
             center bottom / 100vw url("../assets/fade.svg"),
-            center 50% / min(95vw, 60rem) url("../assets/net7_bloom.svg"),
+            /* center 50% / min(95vw, 60rem) url("../assets/net7_bloom.svg"), */
+            center 60% / min(95vw, 100rem) url("../assets/net7-glow.png"),
             left top / 75vw 75vh url("../assets/blob1.svg"),
             right bottom / 75vw 75vh url("../assets/blob2.svg");
         background-repeat: no-repeat;

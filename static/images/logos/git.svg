@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.38 27.38">
+  <defs>
+    <style>
+      :root {
+        color: #000000;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 4;
+        stroke-width: 2.63px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: currentColor;
+      }
+
+      .cls-2 {
+        stroke: #09ff89;
+        stroke-linejoin: bevel;
+        stroke-width: 3.16px;
+      }
+
+      .cls-3 {
+        stroke-width: 3.16px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color: #ffffff;
+        }
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-1" x="5.33" y="5.33" width="16.73" height="16.73" transform="translate(-5.67 13.69) rotate(-45)"/>
+    <path class="cls-3" d="M9.78,5.87l3.91,3.91"/>
+    <path class="cls-2" d="M13.69,19.56v-9.78l4.89,4.89"/>
+  </g>
+</svg>
+

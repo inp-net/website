@@ -1,6 +1,102 @@
 [
     {
+        "year": "2026",
+        "members": [
+            {
+                "name": "Hadrien Mirade",
+                "board": true,
+                "title": "Président",
+                "avatar": "hadrien.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/hadrien-mirade-a09b74386/",
+                    "discord": "@mirhad0155"
+                }
+            },
+            {
+                "name": "Alexandre Poncin",
+                "board": true,
+                "title": "Vice-Président",
+                "avatar": "alexandre.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/alexandre-poncin-159450387/",
+                    "discord": "@alexandresansmajuscule"
+                }
+            },
+            {
+                "name": "Elena Cortinas García",
+                "board": true,
+                "title": "Vice-Présidente",
+                "avatar": "elena.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/elena-cortinas-garc%C3%ADa-3b9647211/",
+                    "discord": "@elenawow"
+                }
+            },
+            {
+                "name": "Nathan Pagnucco",
+                "board": true,
+                "title": "Vice-Président",
+                "avatar": "nathan.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/nathan-pagnucco-53b7ab265/",
+                    "discord": "@november304"
+                }
+            },
+            {
+                "name": "Bilèle El Haddadi",
+                "board": true,
+                "title": "Trésorier",
+                "avatar": "bilele.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/bilele-elhaddadi/",
+                    "github": "https://github.com/TooLoss",
+                    "website": "https://www.bilele-elhaddadi.me/",
+                    "discord": "@loss_"
+                }
+            },
+            {
+                "name": "Thibault Cerda",
+                "board": true,
+                "title": "Secrétaire",
+                "avatar": "thibault.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/thibault-cerda-05708a389/",
+                    "discord": "@theobaldo2745"
+                }
+            },
+            {
+                "name": "Rania Zagouri",
+                "board": false,
+                "title": "Responsable Formation",
+                "avatar": "rania.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/rania-zagouri/"
+                }
+            },
+            {
+                "name": "Yassine Ben Zina",
+                "board": false,
+                "title": "Responsable Pony7",
+                "avatar": "yassine.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/yassine-ben-zina-b81964286/"
+                }
+            },
+            {
+                "name": "Erwan Falaux-Bachelot",
+                "board": false,
+                "title": "Responsable 7uring",
+                "avatar": "erwan.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/erwanfalauxbachelot/",
+                    "github": "https://github.com/TooLoss"
+                }
+            }
+        ]
+    },
+    {
         "year": "2025",
+        "photo": "/images/bureaux/net7-2025.webp",
         "members": [
             {
                 "name": "Matteo Planchet",

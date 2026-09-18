@@ -23,8 +23,10 @@ avatar = avatar ? `/images/avatars/${avatar}` : "";
 <div class="member">
     <img src={avatar} alt={`Avatar de ${name}`} class="avatar" />
     <div class="info">
-        <h3>{name}</h3>
-        <p>{title}</p>
+        <div class="text-content">
+            <h3>{name}</h3>
+            <p>{title}</p>
+        </div>
         <div class="links">
             {
                 links?.linkedin && (
@@ -77,6 +79,8 @@ avatar = avatar ? `/images/avatars/${avatar}` : "";
 <style>
     h3 {
         margin: 0;
+        overflow-wrap: break-word;
+        word-break: break-word;
     }
 
     .member {
@@ -84,12 +88,28 @@ avatar = avatar ? `/images/avatars/${avatar}` : "";
         align-items: center;
         flex-direction: column;
         text-align: center;
+        height: fit-content;
+        box-sizing: border-box;
     }
 
     .avatar {
         border-radius: 50%;
         aspect-ratio: 1 / 1;
         width: 10rem;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        width: 100%;
+        min-width: 0;
+        margin-top: 1rem;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     @keyframes spin {
@@ -118,5 +138,12 @@ avatar = avatar ? `/images/avatars/${avatar}` : "";
     .links a:hover {
         scale: 1.5;
         color: var(--secondary-color);
+    }
+
+    .text-content {
+        width: 15rem;
+        min-width: 0;
+        overflow-wrap: break-word;
+        word-break: break-word;
     }
 </style>
