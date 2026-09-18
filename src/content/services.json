@@ -3,7 +3,7 @@
         "name": "Churros",
         "description": "Vie étudiante de l'n7 en une appli",
         "url": "https://churros.inpt.fr",
-        "image": "/images/logos/churros.png"
+        "image": "/images/logos/churros.svg"
     },
     {
         "name": "NextCloud",
@@ -12,15 +12,21 @@
         "image": "/images/logos/nextcloud.png"
     },
     {
-        "name": "GitLab",
-        "description": "Comme GitHub mais pour l'INPT",
-        "url": "https://gitlab.inpt.fr",
-        "image": "/images/logos/gitlab.png"
+        "name": "Git",
+        "description": "Enregistrer et versionner votre code dans des dépôts",
+        "url": "https://git.inpt.fr",
+        "image": "/images/logos/git.svg"
+    },
+    {
+        "name": "La Frappe",
+        "description": "Les partiels des années précédentes sont centralisés.",
+        "url": "https://frappe.inpt.fr",
+        "image": "/images/logos/lafrappe.svg"
     },
     {
         "name": "Loca7",
         "description": "A la recherche d'un logement ?",
-        "url": "https://loca7.inpt.fr",
+        "url": "https://loca7.fr",
         "image": "/images/logos/loca7.png"
     },
     {
