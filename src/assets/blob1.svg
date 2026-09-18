@@ -24,9 +24,9 @@
 </feMerge>
 </filter>
 <linearGradient id="paint0_linear_41_36" x1="-536.21" y1="329.35" x2="730.817" y2="269.923" gradientUnits="userSpaceOnUse">
-<stop offset="0.0001" stop-color="#208466"/>
-<stop offset="0.461538" stop-color="#12514B"/>
-<stop offset="1" stop-color="#03152B"/>
+<stop offset="0.0001" stop-color="#004BF9D"/>
+<stop offset="0.461538" stop-color="#025959"/>
+<stop offset="1" stop-color="#00040A"/>
 </linearGradient>
 </defs>
 </svg>
