@@ -4,6 +4,7 @@
         "members": [
             {
                 "name": "Hadrien Mirade",
+                "board": true,
                 "title": "Président",
                 "avatar": "hadrien.webp",
                 "links": {
@@ -13,6 +14,7 @@
             },
             {
                 "name": "Alexandre Poncin",
+                "board": true,
                 "title": "Vice-Président",
                 "avatar": "alexandre.webp",
                 "links": {
@@ -22,6 +24,7 @@
             },
             {
                 "name": "Elena Cortinas García",
+                "board": true,
                 "title": "Vice-Présidente",
                 "avatar": "elena.webp",
                 "links": {
@@ -31,6 +34,7 @@
             },
             {
                 "name": "Nathan Pagnucco",
+                "board": true,
                 "title": "Vice-Président",
                 "avatar": "nathan.webp",
                 "links": {
@@ -40,6 +44,7 @@
             },
             {
                 "name": "Bilèle El Haddadi",
+                "board": true,
                 "title": "Trésorier",
                 "avatar": "bilele.webp",
                 "links": {
@@ -51,11 +56,40 @@
             },
             {
                 "name": "Thibault Cerda",
+                "board": true,
                 "title": "Secrétaire",
                 "avatar": "thibault.webp",
                 "links": {
                     "linkedin": "https://www.linkedin.com/in/thibault-cerda-05708a389/",
                     "discord": "@theobaldo2745"
+                }
+            },
+            {
+                "name": "Rania Zagouri",
+                "board": false,
+                "title": "Responsable Formation",
+                "avatar": "rania.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/rania-zagouri/"
+                }
+            },
+            {
+                "name": "Yassine Ben Zina",
+                "board": false,
+                "title": "Responsable Pony7",
+                "avatar": "yassine.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/yassine-ben-zina-b81964286/"
+                }
+            },
+            {
+                "name": "Erwan Falaux-Bachelot",
+                "board": false,
+                "title": "Responsable 7uring",
+                "avatar": "erwan.webp",
+                "links": {
+                    "linkedin": "https://www.linkedin.com/in/erwanfalauxbachelot/",
+                    "github": "https://github.com/TooLoss"
                 }
             }
         ]
