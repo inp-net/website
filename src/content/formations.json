@@ -1,7 +1,12 @@
 [
     {
-        "name": "Formation Git",
+        "name": "Formation - Git",
         "url": "https://cloud.inpt.fr/s/HkX3Qy92aWiSkj4",
         "date": "29/09/2026"
+    },
+    {
+        "name": "Formation - Web (HTML, CSS, TS)",
+        "url": "https://cloud.inpt.fr/s/8ypyS6DfHZr4tDJ",
+        "date": "06/10/2026"
     }
 ]
