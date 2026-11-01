@@ -1,15 +1,17 @@
 pages:
-    image: node:lts
+  image: node:lts
 
-    before_script:
-        - corepack enable
-        - pnpm install --frozen-lockfile
+  before_script:
+    - npm install -g corepack
+    - corepack enable
+    - corepack prepare pnpm@latest --activate
+    - pnpm install --frozen-lockfile
 
-    script:
-        - pnpm run build
+  script:
+    - pnpm run build
 
-    artifacts:
-        paths:
-            - public
-    only:
-        - master
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
